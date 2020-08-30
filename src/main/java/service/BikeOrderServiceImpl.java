@@ -3,13 +3,13 @@ package service;
 import model.Customer;
 
 /**
- * diese Klasse wird ist für den Integrationstest
+ * diese Klasse ist für den Integrationstest
  * dieser befindet sich in src/it/..
  */
 
 public class BikeOrderServiceImpl implements BikeOrderService {
 
-    private BikeBuildingServiceImpl bikeBuildingService = new BikeBuildingServiceImpl();
+    private final BikeBuildingServiceImpl bikeBuildingService = new BikeBuildingServiceImpl();
 
     public Customer orderCustomBike(String name, String color) {
         Customer customer = new Customer();
