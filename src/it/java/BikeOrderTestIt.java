@@ -3,10 +3,11 @@ import model.Customer;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import service.BikeOrderService;
+import service.BikeOrderServiceImpl;
 
 public class BikeOrderTestIt {
 
-    private BikeOrderService bikeOrderService = new BikeOrderService();
+    private BikeOrderService bikeOrderService = new BikeOrderServiceImpl();
 
     @Test
     void bikeOrderTest_returnsCorrectBike() {
